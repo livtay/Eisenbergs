@@ -12,6 +12,7 @@
 		480FE70C1DC9048500C01E92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 480FE70A1DC9048500C01E92 /* Main.storyboard */; };
 		480FE70E1DC9048500C01E92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 480FE70D1DC9048500C01E92 /* Assets.xcassets */; };
 		480FE7111DC9048500C01E92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 480FE70F1DC9048500C01E92 /* LaunchScreen.storyboard */; };
+		480FE7191DC90FBC00C01E92 /* ScrollingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FE7181DC90FBC00C01E92 /* ScrollingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		480FE70D1DC9048500C01E92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		480FE7101DC9048500C01E92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		480FE7121DC9048500C01E92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		480FE7181DC90FBC00C01E92 /* ScrollingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				480FE7061DC9048500C01E92 /* AppDelegate.swift */,
 				480FE7081DC9048500C01E92 /* ViewController.swift */,
 				480FE70A1DC9048500C01E92 /* Main.storyboard */,
+				480FE7181DC90FBC00C01E92 /* ScrollingViewController.swift */,
 				480FE70D1DC9048500C01E92 /* Assets.xcassets */,
 				480FE70F1DC9048500C01E92 /* LaunchScreen.storyboard */,
 				480FE7121DC9048500C01E92 /* Info.plist */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				480FE7091DC9048500C01E92 /* ViewController.swift in Sources */,
+				480FE7191DC90FBC00C01E92 /* ScrollingViewController.swift in Sources */,
 				480FE7071DC9048500C01E92 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

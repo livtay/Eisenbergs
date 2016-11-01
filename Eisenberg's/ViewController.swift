@@ -8,18 +8,34 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UINavigationControllerDelegate {
 
+    @IBOutlet var cmonInButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let image:UIImage = UIImage(named: "cmon_in")!
+        self.cmonInButton.setImage(image, for: .normal)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    @IBAction func pushHard(recognizer: UITapGestureRecognizer) {
+        
+        if self.cmonInButton.imageView?.image == UIImage(named: "cmon_in") {
+            let newImage = UIImage(named: "push_hard")
+            self.cmonInButton.setImage(newImage, for: .normal)
+        } else {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let scrollingVC:ScrollingViewController = storyboard.instantiateViewController(withIdentifier: "ScrollingViewController") as! ScrollingViewController
+            self.navigationController?.pushViewController(scrollingVC, animated: true)
+        }
+        
+    }
 
 }
 
