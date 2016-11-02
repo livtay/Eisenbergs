@@ -58,8 +58,8 @@
 			children = (
 				480FE7061DC9048500C01E92 /* AppDelegate.swift */,
 				480FE7081DC9048500C01E92 /* ViewController.swift */,
-				480FE70A1DC9048500C01E92 /* Main.storyboard */,
 				480FE7181DC90FBC00C01E92 /* ScrollingViewController.swift */,
+				480FE70A1DC9048500C01E92 /* Main.storyboard */,
 				480FE70D1DC9048500C01E92 /* Assets.xcassets */,
 				480FE70F1DC9048500C01E92 /* LaunchScreen.storyboard */,
 				480FE7121DC9048500C01E92 /* Info.plist */,
@@ -306,6 +306,7 @@
 				480FE7171DC9048500C01E92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
