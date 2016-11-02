@@ -27,6 +27,10 @@ class ScrollingViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = true
+    }
 
     func animateFunction() {
         
@@ -37,4 +41,55 @@ class ScrollingViewController: UIViewController {
         }
     }
     
+    @IBAction func toCelebVC(_ sender: AnyObject) {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle:nil)
+        let celebVC:CelebCollectionViewController = storyboard.instantiateViewController(withIdentifier: "CelebViewController") as! CelebCollectionViewController
+        self.navigationController?.pushViewController(celebVC, animated: true)
+    }
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

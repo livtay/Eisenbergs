@@ -15,6 +15,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationController?.navigationBar.isHidden = true
         let image:UIImage = UIImage(named: "cmon_in")!
         self.cmonInButton.setImage(image, for: .normal)
     }

@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Eisenberg&apos;s/ViewController.swift"
-            timestampString = "499722000.259576"
+            timestampString = "499801487.096543"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
             landmarkName = "pushHard(recognizer:)"
             landmarkType = "7">
          </BreakpointContent>

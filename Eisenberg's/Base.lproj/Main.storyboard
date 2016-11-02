@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Eisenberg_s" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="View Controller" id="BYZ-38-t0r" customClass="ViewController" customModule="Eisenberg_s" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -66,7 +66,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="624.79999999999995" y="158.77061469265368"/>
+            <point key="canvasLocation" x="526" y="176"/>
         </scene>
         <!--Scrolling View Controller-->
         <scene sceneID="2ST-Gp-Ffw">
@@ -150,6 +150,9 @@
                                                             <constraint firstAttribute="width" secondItem="BZh-MG-603" secondAttribute="height" multiplier="5:2" id="FAD-Oz-90u"/>
                                                         </constraints>
                                                         <state key="normal" title="Button" image="lookwholoves"/>
+                                                        <connections>
+                                                            <action selector="toCelebVC:" destination="tGL-uK-wiH" eventType="touchUpInside" id="Skm-YX-GIP"/>
+                                                        </connections>
                                                     </button>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="victor_eggcream" translatesAutoresizingMaskIntoConstraints="NO" id="QeA-9p-bZb">
                                                         <constraints>
@@ -241,6 +244,9 @@
                                                             <constraint firstAttribute="width" secondItem="B0p-m8-ttz" secondAttribute="height" multiplier="115:87" id="rRw-2d-YYP"/>
                                                         </constraints>
                                                         <state key="normal" title="Button" image="taye_idina"/>
+                                                        <connections>
+                                                            <action selector="toCelebVC:" destination="tGL-uK-wiH" eventType="touchUpInside" id="Uw4-hn-1DE"/>
+                                                        </connections>
                                                     </button>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pickle1" translatesAutoresizingMaskIntoConstraints="NO" id="ate-ie-9Dj">
                                                         <constraints>
@@ -374,6 +380,9 @@
                                                     <constraint firstAttribute="width" secondItem="DUY-SV-ucp" secondAttribute="height" multiplier="23:17" id="KFY-ny-2SB"/>
                                                 </constraints>
                                                 <state key="normal" title="Button" image="Jackie_Mason"/>
+                                                <connections>
+                                                    <action selector="toCelebVC:" destination="tGL-uK-wiH" eventType="touchUpInside" id="Zs5-DW-r98"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D9v-Fg-FMy">
                                                 <constraints>
@@ -484,6 +493,7 @@
                             <constraint firstItem="B6c-uD-CUk" firstAttribute="top" secondItem="vMn-Zu-8bH" secondAttribute="top" id="tOr-79-fcw"/>
                         </constraints>
                     </view>
+                    <nil key="simulatedTopBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="1500"/>
                     <connections>
@@ -497,19 +507,84 @@
         <!--Navigation Controller-->
         <scene sceneID="br5-KA-3bm">
             <objects>
-                <navigationController navigationBarHidden="YES" id="va1-o9-4nh" sceneMemberID="viewController">
-                    <nil key="simulatedTopBarMetrics"/>
+                <navigationController id="va1-o9-4nh" sceneMemberID="viewController">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="riG-G4-3Ka">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="qtc-Qn-pgA"/>
+                        <segue destination="tGL-uK-wiH" kind="show" identifier="scrollSegue" id="mmn-w1-pOM"/>
+                        <segue destination="q4z-GD-1yb" kind="show" identifier="celebSegue" id="uds-I7-0GK"/>
+                        <segue destination="aa2-v5-WGN" kind="show" id="B40-hw-7S5"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nEr-dR-1q5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-386" y="160"/>
+        </scene>
+        <!--Celeb Collection View Controller-->
+        <scene sceneID="qpK-m5-InK">
+            <objects>
+                <collectionViewController storyboardIdentifier="CelebViewController" id="q4z-GD-1yb" customClass="CelebCollectionViewController" customModule="Eisenberg_s" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="vcx-vy-FOG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0Gg-qQ-ULm">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="9Dq-5A-TUR">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="q4z-GD-1yb" id="QBl-AI-d1I"/>
+                            <outlet property="delegate" destination="q4z-GD-1yb" id="337-lP-Vyu"/>
+                        </connections>
+                    </collectionView>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9pg-0p-Z5y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-161" y="930"/>
+        </scene>
+        <!--Photo View Controller-->
+        <scene sceneID="ajf-nc-6XU">
+            <objects>
+                <viewController id="aa2-v5-WGN" customClass="PhotoViewController" customModule="Eisenberg_s" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EB5-L1-5JY"/>
+                        <viewControllerLayoutGuide type="bottom" id="jFe-EE-H2e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qef-mA-E3R">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fH1-hi-u4d"/>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fH1-hi-u4d" firstAttribute="top" secondItem="EB5-L1-5JY" secondAttribute="bottom" id="BXA-G7-SdV"/>
+                            <constraint firstItem="jFe-EE-H2e" firstAttribute="top" secondItem="fH1-hi-u4d" secondAttribute="bottom" id="Dyf-mu-M4A"/>
+                            <constraint firstItem="fH1-hi-u4d" firstAttribute="leading" secondItem="Qef-mA-E3R" secondAttribute="leading" id="mvM-7F-jxm"/>
+                            <constraint firstAttribute="trailing" secondItem="fH1-hi-u4d" secondAttribute="trailing" id="mvw-Q5-BBd"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gcl-Ob-1xy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="525.60000000000002" y="929.68515742128943"/>
         </scene>
     </scenes>
     <resources>
