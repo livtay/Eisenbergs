@@ -15,6 +15,8 @@
 		480FE7191DC90FBC00C01E92 /* ScrollingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FE7181DC90FBC00C01E92 /* ScrollingViewController.swift */; };
 		4846C9571DCA4EDC0090F88A /* CelebCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4846C9561DCA4EDC0090F88A /* CelebCollectionViewController.swift */; };
 		4846C9591DCA50580090F88A /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4846C9581DCA50580090F88A /* Photo.swift */; };
+		484C815F1DCCF96700229646 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484C815E1DCCF96700229646 /* WebViewController.swift */; };
+		485D5CF41DCA7F1600D62505 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485D5CF31DCA7F1600D62505 /* PhotosViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		480FE7181DC90FBC00C01E92 /* ScrollingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollingViewController.swift; sourceTree = "<group>"; };
 		4846C9561DCA4EDC0090F88A /* CelebCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CelebCollectionViewController.swift; sourceTree = "<group>"; };
 		4846C9581DCA50580090F88A /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		484C815E1DCCF96700229646 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		485D5CF31DCA7F1600D62505 /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,8 @@
 				480FE7181DC90FBC00C01E92 /* ScrollingViewController.swift */,
 				4846C9561DCA4EDC0090F88A /* CelebCollectionViewController.swift */,
 				4846C9581DCA50580090F88A /* Photo.swift */,
+				485D5CF31DCA7F1600D62505 /* PhotosViewController.swift */,
+				484C815E1DCCF96700229646 /* WebViewController.swift */,
 				480FE70A1DC9048500C01E92 /* Main.storyboard */,
 				480FE70D1DC9048500C01E92 /* Assets.xcassets */,
 				480FE70F1DC9048500C01E92 /* LaunchScreen.storyboard */,
@@ -149,6 +155,8 @@
 				4846C9571DCA4EDC0090F88A /* CelebCollectionViewController.swift in Sources */,
 				480FE7091DC9048500C01E92 /* ViewController.swift in Sources */,
 				480FE7191DC90FBC00C01E92 /* ScrollingViewController.swift in Sources */,
+				485D5CF41DCA7F1600D62505 /* PhotosViewController.swift in Sources */,
+				484C815F1DCCF96700229646 /* WebViewController.swift in Sources */,
 				480FE7071DC9048500C01E92 /* AppDelegate.swift in Sources */,
 				4846C9591DCA50580090F88A /* Photo.swift in Sources */,
 			);

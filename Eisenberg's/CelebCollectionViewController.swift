@@ -53,7 +53,12 @@ class CelebCollectionViewController: UICollectionViewController, UINavigationCon
     }
 
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        //segue to imagevc
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let photoVC:PhotosViewController = storyboard.instantiateViewController(withIdentifier: "PhotosVC") as! PhotosViewController
+        let selectedPhoto:Photo = self.celebPhotos.object(at: indexPath.row) as! Photo
+        photoVC.currentPhoto = selectedPhoto
+        self.navigationController?.pushViewController(photoVC, animated: true)
     }
     
     // MARK: UICollectionViewDelegateFlowLayout
@@ -79,6 +84,29 @@ class CelebCollectionViewController: UICollectionViewController, UINavigationCon
         collectionViewLayout: UICollectionViewLayout,
                         minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 0.0
+    }
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        
+        guard let flowLayout = collectionView?.collectionViewLayout as? UICollectionViewFlowLayout else {
+            return
+        }
+        
+        if UIInterfaceOrientationIsLandscape(UIApplication.shared.statusBarOrientation) {
+            let collectionViewWidth = (collectionView?.bounds.width)!/3
+            let collectionViewHeight = (collectionViewWidth * 4) / 6
+            flowLayout.itemSize = CGSize(width: collectionViewWidth, height: collectionViewHeight)
+        } else {
+            let collectionViewWidth = (collectionView?.bounds.width)!/3
+            let collectionViewHeight = (collectionViewWidth * 4) / 6
+            flowLayout.itemSize = CGSize(width: collectionViewWidth, height: collectionViewHeight)
+        }
+    }
+    
+    override func willRotate(to toInterfaceOrientation: UIInterfaceOrientation, duration: TimeInterval) {
+        self.collectionView?.reloadData()
+        self.collectionView?.frame = self.view.frame
     }
     
     func loadCelebPhotos() {
