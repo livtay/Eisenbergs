@@ -43,7 +43,7 @@ class ScrollingViewController: UIViewController {
 
     @IBAction func callPhoneNumber(_ sender: AnyObject) {
         
-        let alertController = UIAlertController(title: "(212)675-5096", message: "Call us?", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "Call us now!", message: "(212) 675-5096", preferredStyle: .alert)
         let callAction = UIAlertAction(title: "Call!", style: .default, handler: {
             action in
                 let url = NSURL(string: "tel://2126755096")
@@ -69,6 +69,20 @@ class ScrollingViewController: UIViewController {
         self.navigationController?.pushViewController(webVC, animated: true)
     }
  
+    @IBAction func toSeamless(_ sender: Any) {
+        
+        let webVC:WebViewController = WebViewController()
+        webVC.url = URL(string: "https://www.seamless.com/menu/eisenbergs-sandwich-shop-inc-174-5th-ave-new-york-/292071")
+        self.navigationController?.pushViewController(webVC, animated: true)
+    }
+    
+    @IBAction func toDelivery(_ sender: Any) {
+        
+        let webVC:WebViewController = WebViewController()
+        webVC.url = URL(string: "https://www.delivery.com/cities/nyc/categories/restaurant/eisenbergs-sandwich-shop")
+        self.navigationController?.pushViewController(webVC, animated: true)
+    }
+    
 }
 
 

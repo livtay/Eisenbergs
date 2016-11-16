@@ -17,6 +17,7 @@
 		4846C9591DCA50580090F88A /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4846C9581DCA50580090F88A /* Photo.swift */; };
 		484C815F1DCCF96700229646 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484C815E1DCCF96700229646 /* WebViewController.swift */; };
 		485D5CF41DCA7F1600D62505 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485D5CF31DCA7F1600D62505 /* PhotosViewController.swift */; };
+		488423DF1DD4F26E002E1433 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488423DE1DD4F26E002E1433 /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		4846C9581DCA50580090F88A /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		484C815E1DCCF96700229646 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		485D5CF31DCA7F1600D62505 /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		488423DE1DD4F26E002E1433 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuViewController.swift; path = ../MenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				4846C9581DCA50580090F88A /* Photo.swift */,
 				485D5CF31DCA7F1600D62505 /* PhotosViewController.swift */,
 				484C815E1DCCF96700229646 /* WebViewController.swift */,
+				488423DE1DD4F26E002E1433 /* MenuViewController.swift */,
 				480FE70A1DC9048500C01E92 /* Main.storyboard */,
 				480FE70D1DC9048500C01E92 /* Assets.xcassets */,
 				480FE70F1DC9048500C01E92 /* LaunchScreen.storyboard */,
@@ -106,7 +109,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Olivia Taylor";
 				TargetAttributes = {
 					480FE7021DC9048500C01E92 = {
@@ -159,6 +162,7 @@
 				484C815F1DCCF96700229646 /* WebViewController.swift in Sources */,
 				480FE7071DC9048500C01E92 /* AppDelegate.swift in Sources */,
 				4846C9591DCA50580090F88A /* Photo.swift in Sources */,
+				488423DF1DD4F26E002E1433 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +206,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -252,6 +257,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
