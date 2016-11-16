@@ -22,6 +22,17 @@ class ScrollingViewController: UIViewController {
         self.getIt.image = getItImage
         let timer = Timer.scheduledTimer(timeInterval: 1.5, target: self, selector: #selector(ScrollingViewController.animateFunction), userInfo: nil, repeats: true)
         timer.fire()
+        
+        let launchedBefore = UserDefaults.standard.bool(forKey: "launchedBefore")
+        if (launchedBefore == false) {
+            let welcomeAlert = UIAlertController(title: "Welcome to our app!", message: "Tap around for articles, videos & more", preferredStyle: .alert)
+            let gotIt = UIAlertAction(title: "Got it!", style: .default, handler: nil)
+            welcomeAlert.addAction(gotIt)
+            self.present(welcomeAlert, animated: true, completion: nil)
+            UserDefaults.standard.set(true, forKey: "launchedBefore")
+        } else {
+            print("Not first launch")
+        }
     }
 
     override func didReceiveMemoryWarning() {
