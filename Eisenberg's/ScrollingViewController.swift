@@ -62,25 +62,52 @@ class ScrollingViewController: UIViewController {
         self.navigationController?.pushViewController(celebVC, animated: true)
     }
     
-    @IBAction func findFacebook(_ sender: AnyObject) {
+    func toWebVC(url:String) {
         
         let webVC:WebViewController = WebViewController()
-        webVC.url = URL(string: "https://facebook.com/Eisenbergs-Sandwich-Shop-116518457428/")
+        webVC.url = URL(string: url)
         self.navigationController?.pushViewController(webVC, animated: true)
+    }
+    
+    
+    @IBAction func findFacebook(_ sender: AnyObject) {
+        
+        toWebVC(url: "https://facebook.com/Eisenbergs-Sandwich-Shop-116518457428/")
     }
  
     @IBAction func toSeamless(_ sender: Any) {
         
-        let webVC:WebViewController = WebViewController()
-        webVC.url = URL(string: "https://www.seamless.com/menu/eisenbergs-sandwich-shop-inc-174-5th-ave-new-york-/292071")
-        self.navigationController?.pushViewController(webVC, animated: true)
+        toWebVC(url: "https://www.seamless.com/menu/eisenbergs-sandwich-shop-inc-174-5th-ave-new-york-/292071")
     }
     
     @IBAction func toDelivery(_ sender: Any) {
         
-        let webVC:WebViewController = WebViewController()
-        webVC.url = URL(string: "https://www.delivery.com/cities/nyc/categories/restaurant/eisenbergs-sandwich-shop")
-        self.navigationController?.pushViewController(webVC, animated: true)
+        toWebVC(url: "https://www.delivery.com/cities/nyc/categories/restaurant/eisenbergs-sandwich-shop")
+    }
+    
+    @IBAction func toBusinessInsider(_ sender: Any) {
+        
+        toWebVC(url: "http://www.businessinsider.com/pictures-eisenbergs-deli-nyc-2012-1?op=1")
+    }
+    
+    @IBAction func toNyTimes(_ sender: Any) {
+        
+        toWebVC(url: "http://www.nytimes.com/2006/03/23/nyregion/sandwich-shop-stays-saved-by-a-regular.html")
+    }
+    
+    @IBAction func toMap(_ sender: Any) {
+        
+        toWebVC(url: "https://www.google.com/maps/place/Eisenberg's+Sandwich+Shop/@40.741141,-73.9924168,17z/data=!3m1!4b1!4m5!3m4!1s0x89c25baa57b9349f:0x32281a7b117ac87f!8m2!3d40.741137!4d-73.9902228")
+    }
+    
+    @IBAction func toVimeo(_ sender: Any) {
+        
+        toWebVC(url: "https://vimeo.com/38819838")
+    }
+    
+    @IBAction func toKlezmer(_ sender: Any) {
+        
+        toWebVC(url: "https://www.youtube.com/watch?v=ZQ4mvzMhTZE")
     }
     
 }

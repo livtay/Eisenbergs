@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="va1-o9-4nh">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="va1-o9-4nh">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -125,7 +125,10 @@
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="Epf-2R-GPO" secondAttribute="height" multiplier="115:66" id="nhn-yG-Wc6"/>
                                                         </constraints>
-                                                        <state key="normal" title="Button"/>
+                                                        <state key="normal" title="Button" image="vimeo"/>
+                                                        <connections>
+                                                            <action selector="toVimeo:" destination="tGL-uK-wiH" eventType="touchUpInside" id="oLM-gt-LVb"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y4F-sV-DhW">
                                                         <rect key="frame" x="0.0" y="619" width="115" height="66"/>
@@ -133,7 +136,10 @@
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="y4F-sV-DhW" secondAttribute="height" multiplier="115:66" id="uK8-LV-EFR"/>
                                                         </constraints>
-                                                        <state key="normal" title="Button"/>
+                                                        <state key="normal" title="Button" image="klezmer"/>
+                                                        <connections>
+                                                            <action selector="toKlezmer:" destination="tGL-uK-wiH" eventType="touchUpInside" id="jIq-TN-nWR"/>
+                                                        </connections>
                                                     </button>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="klezmer-1" translatesAutoresizingMaskIntoConstraints="NO" id="UFQ-L2-0XD">
                                                         <rect key="frame" x="0.0" y="589" width="115" height="22"/>
@@ -169,12 +175,6 @@
                                                             <constraint firstAttribute="width" secondItem="QeA-9p-bZb" secondAttribute="height" multiplier="115:173" id="Iuv-jN-vww"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="los_ninios" translatesAutoresizingMaskIntoConstraints="NO" id="7NR-e9-Uiz">
-                                                        <rect key="frame" x="0.0" y="1124" width="115" height="34"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" secondItem="7NR-e9-Uiz" secondAttribute="height" multiplier="115:34" id="FSe-KE-tzq"/>
-                                                        </constraints>
-                                                    </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CTr-fA-h7b">
                                                         <rect key="frame" x="0.0" y="119" width="115" height="170"/>
                                                         <constraints>
@@ -186,9 +186,9 @@
                                                         </connections>
                                                     </button>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jose_eggcream" translatesAutoresizingMaskIntoConstraints="NO" id="eul-28-c44">
-                                                        <rect key="frame" x="0.0" y="1166" width="115" height="76"/>
+                                                        <rect key="frame" x="0.0" y="1124" width="115" height="76"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" secondItem="eul-28-c44" secondAttribute="height" multiplier="115:76" id="tZF-DS-aST"/>
+                                                            <constraint firstAttribute="width" secondItem="eul-28-c44" secondAttribute="height" multiplier="115:76" id="UV0-wf-fa4"/>
                                                         </constraints>
                                                     </imageView>
                                                 </subviews>
@@ -201,17 +201,14 @@
                                                     <constraint firstItem="Epf-2R-GPO" firstAttribute="leading" secondItem="Yjp-rb-RXL" secondAttribute="leading" id="6gy-5d-qpq"/>
                                                     <constraint firstItem="QeA-9p-bZb" firstAttribute="top" secondItem="BZh-MG-603" secondAttribute="bottom" constant="8" id="7Km-V0-zSF"/>
                                                     <constraint firstAttribute="trailing" secondItem="8V0-Xs-2tU" secondAttribute="trailing" id="9R9-Du-v2t"/>
-                                                    <constraint firstItem="7NR-e9-Uiz" firstAttribute="leading" secondItem="Yjp-rb-RXL" secondAttribute="leading" id="BAz-Jo-5go"/>
                                                     <constraint firstItem="y4F-sV-DhW" firstAttribute="leading" secondItem="Yjp-rb-RXL" secondAttribute="leading" id="C9n-Db-pCt"/>
                                                     <constraint firstItem="Epf-2R-GPO" firstAttribute="top" secondItem="n1r-Jp-k5O" secondAttribute="bottom" constant="8" id="CXx-cB-2DH"/>
                                                     <constraint firstItem="lWL-Lu-e5A" firstAttribute="top" secondItem="CTr-fA-h7b" secondAttribute="bottom" constant="8" id="Djg-h5-fTg"/>
                                                     <constraint firstItem="UFQ-L2-0XD" firstAttribute="top" secondItem="Epf-2R-GPO" secondAttribute="bottom" constant="8" id="DlS-Ag-etS"/>
                                                     <constraint firstAttribute="trailing" secondItem="lWL-Lu-e5A" secondAttribute="trailing" id="HDg-0L-nmW"/>
                                                     <constraint firstItem="BZh-MG-603" firstAttribute="top" secondItem="IlH-Tu-mdx" secondAttribute="bottom" constant="8" id="JsR-o4-tCY"/>
-                                                    <constraint firstItem="eul-28-c44" firstAttribute="top" secondItem="7NR-e9-Uiz" secondAttribute="bottom" constant="8" id="L7F-RB-UVs"/>
                                                     <constraint firstItem="IlH-Tu-mdx" firstAttribute="top" secondItem="8V0-Xs-2tU" secondAttribute="bottom" constant="8" id="M41-sx-CIv"/>
-                                                    <constraint firstAttribute="trailing" secondItem="7NR-e9-Uiz" secondAttribute="trailing" id="M95-t1-JeO"/>
-                                                    <constraint firstAttribute="trailing" secondItem="eul-28-c44" secondAttribute="trailing" id="Rod-eu-BAf"/>
+                                                    <constraint firstItem="eul-28-c44" firstAttribute="top" secondItem="QeA-9p-bZb" secondAttribute="bottom" constant="8" id="OtX-a8-5vS"/>
                                                     <constraint firstAttribute="trailing" secondItem="7C4-Aa-stx" secondAttribute="trailing" id="S1K-An-2Bi"/>
                                                     <constraint firstItem="CTr-fA-h7b" firstAttribute="leading" secondItem="Yjp-rb-RXL" secondAttribute="leading" id="TFy-C1-Ip9"/>
                                                     <constraint firstItem="n1r-Jp-k5O" firstAttribute="top" secondItem="lWL-Lu-e5A" secondAttribute="bottom" constant="8" id="TTC-gg-4QO"/>
@@ -220,14 +217,14 @@
                                                     <constraint firstAttribute="trailing" secondItem="n1r-Jp-k5O" secondAttribute="trailing" id="We9-F1-18u"/>
                                                     <constraint firstItem="IlH-Tu-mdx" firstAttribute="leading" secondItem="Yjp-rb-RXL" secondAttribute="leading" id="Y7S-FM-ts0"/>
                                                     <constraint firstItem="y4F-sV-DhW" firstAttribute="top" secondItem="UFQ-L2-0XD" secondAttribute="bottom" constant="8" id="Yrz-eM-Otp"/>
-                                                    <constraint firstItem="7NR-e9-Uiz" firstAttribute="top" secondItem="QeA-9p-bZb" secondAttribute="bottom" constant="8" id="ZaT-5C-qRF"/>
+                                                    <constraint firstItem="eul-28-c44" firstAttribute="leading" secondItem="Yjp-rb-RXL" secondAttribute="leading" id="c8d-xg-J4I"/>
                                                     <constraint firstItem="UFQ-L2-0XD" firstAttribute="leading" secondItem="Yjp-rb-RXL" secondAttribute="leading" id="deB-ow-izI"/>
                                                     <constraint firstAttribute="trailing" secondItem="BZh-MG-603" secondAttribute="trailing" id="eb1-dG-FoE"/>
                                                     <constraint firstItem="lWL-Lu-e5A" firstAttribute="leading" secondItem="Yjp-rb-RXL" secondAttribute="leading" id="fIV-Dr-6Le"/>
                                                     <constraint firstItem="7C4-Aa-stx" firstAttribute="top" secondItem="Yjp-rb-RXL" secondAttribute="top" id="fqj-G8-agD"/>
                                                     <constraint firstAttribute="trailing" secondItem="UFQ-L2-0XD" secondAttribute="trailing" id="gMx-b3-X6y"/>
-                                                    <constraint firstItem="eul-28-c44" firstAttribute="leading" secondItem="Yjp-rb-RXL" secondAttribute="leading" id="hMs-Vl-aPc"/>
                                                     <constraint firstItem="8V0-Xs-2tU" firstAttribute="top" secondItem="y4F-sV-DhW" secondAttribute="bottom" constant="8" id="hsy-ct-PgH"/>
+                                                    <constraint firstAttribute="trailing" secondItem="eul-28-c44" secondAttribute="trailing" id="ijQ-Ll-dmV"/>
                                                     <constraint firstAttribute="trailing" secondItem="Epf-2R-GPO" secondAttribute="trailing" id="k8C-NX-30S"/>
                                                     <constraint firstAttribute="trailing" secondItem="CTr-fA-h7b" secondAttribute="trailing" id="kEc-Ry-Mdj"/>
                                                     <constraint firstAttribute="width" secondItem="Yjp-rb-RXL" secondAttribute="height" multiplier="115:1406" id="nPh-ZS-AvE"/>
@@ -280,6 +277,9 @@
                                                             <constraint firstAttribute="width" secondItem="jT8-A5-nx5" secondAttribute="height" multiplier="115:61" id="dCy-Aw-McL"/>
                                                         </constraints>
                                                         <state key="normal" title="Button" image="counter_upshot"/>
+                                                        <connections>
+                                                            <action selector="toNyTimes:" destination="tGL-uK-wiH" eventType="touchUpInside" id="G4g-aJ-Bio"/>
+                                                        </connections>
                                                     </button>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cholesterol" translatesAutoresizingMaskIntoConstraints="NO" id="PMQ-mz-wyJ">
                                                         <rect key="frame" x="0.0" y="205" width="115" height="76"/>
@@ -299,6 +299,9 @@
                                                             <constraint firstAttribute="width" secondItem="Quf-Tw-pRh" secondAttribute="height" multiplier="23:16" id="p98-lG-H0B"/>
                                                         </constraints>
                                                         <state key="normal" title="Button" image="BI_img"/>
+                                                        <connections>
+                                                            <action selector="toBusinessInsider:" destination="tGL-uK-wiH" eventType="touchUpInside" id="oON-WS-hAa"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B0p-m8-ttz">
                                                         <rect key="frame" x="0.0" y="555" width="115" height="87"/>
@@ -343,14 +346,22 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="los_ninios" translatesAutoresizingMaskIntoConstraints="NO" id="7NR-e9-Uiz">
+                                                        <rect key="frame" x="0.0" y="1153" width="115" height="34"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="7NR-e9-Uiz" secondAttribute="height" multiplier="115:34" id="CfX-rq-0eU"/>
+                                                        </constraints>
+                                                    </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
+                                                    <constraint firstItem="7NR-e9-Uiz" firstAttribute="leading" secondItem="Gyo-Z6-wmq" secondAttribute="leading" id="1YN-8V-iMX"/>
                                                     <constraint firstItem="4Cx-Jl-SOo" firstAttribute="leading" secondItem="Gyo-Z6-wmq" secondAttribute="leading" id="1ab-Wo-PLp"/>
                                                     <constraint firstItem="S9b-1f-XCu" firstAttribute="top" secondItem="Gyo-Z6-wmq" secondAttribute="top" id="29m-kz-7HA"/>
                                                     <constraint firstItem="gaS-Sc-nJt" firstAttribute="leading" secondItem="Gyo-Z6-wmq" secondAttribute="leading" id="36G-Ql-nSh"/>
                                                     <constraint firstItem="4Cx-Jl-SOo" firstAttribute="leading" secondItem="Gyo-Z6-wmq" secondAttribute="leading" id="52X-jP-m89"/>
                                                     <constraint firstAttribute="trailing" secondItem="QGR-0J-DDc" secondAttribute="trailing" id="6Dr-oG-2fy"/>
+                                                    <constraint firstAttribute="trailing" secondItem="7NR-e9-Uiz" secondAttribute="trailing" id="6a1-ag-9PX"/>
                                                     <constraint firstAttribute="trailing" secondItem="4Cx-Jl-SOo" secondAttribute="trailing" id="87X-lS-Bbg"/>
                                                     <constraint firstAttribute="trailing" secondItem="Quf-Tw-pRh" secondAttribute="trailing" id="8zU-7p-CiI"/>
                                                     <constraint firstItem="CCe-O6-Ld6" firstAttribute="leading" secondItem="S9b-1f-XCu" secondAttribute="trailing" constant="8" id="9bc-8A-JWI"/>
@@ -372,6 +383,7 @@
                                                     <constraint firstItem="4Cx-Jl-SOo" firstAttribute="top" secondItem="CCe-O6-Ld6" secondAttribute="bottom" constant="8" id="XKU-4N-nEL"/>
                                                     <constraint firstItem="S9b-1f-XCu" firstAttribute="leading" secondItem="Gyo-Z6-wmq" secondAttribute="leading" id="Y8t-fG-wtC"/>
                                                     <constraint firstItem="svN-qU-5BX" firstAttribute="leading" secondItem="Gyo-Z6-wmq" secondAttribute="leading" id="Z8R-St-Lev"/>
+                                                    <constraint firstItem="7NR-e9-Uiz" firstAttribute="top" secondItem="WSP-JV-CWt" secondAttribute="bottom" constant="8" id="a8z-cS-2Ft"/>
                                                     <constraint firstAttribute="width" secondItem="Gyo-Z6-wmq" secondAttribute="height" multiplier="115:1406" id="b3W-UN-6sA"/>
                                                     <constraint firstItem="Quf-Tw-pRh" firstAttribute="leading" secondItem="Gyo-Z6-wmq" secondAttribute="leading" id="cIQ-nJ-rzj"/>
                                                     <constraint firstAttribute="trailing" secondItem="4Cx-Jl-SOo" secondAttribute="trailing" id="cQY-k2-SFH"/>
@@ -476,6 +488,9 @@
                                                     <constraint firstAttribute="width" secondItem="D9v-Fg-FMy" secondAttribute="height" multiplier="115:119" id="wek-fm-dUj"/>
                                                 </constraints>
                                                 <state key="normal" title="Button" image="mapview"/>
+                                                <connections>
+                                                    <action selector="toMap:" destination="tGL-uK-wiH" eventType="touchUpInside" id="lkG-53-n73"/>
+                                                </connections>
                                             </button>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eisentuna" translatesAutoresizingMaskIntoConstraints="NO" id="xef-As-bzs">
                                                 <rect key="frame" x="130" y="906" width="115" height="76"/>
@@ -761,6 +776,7 @@
         <image name="heinz" width="600" height="420"/>
         <image name="hours" width="300" height="108"/>
         <image name="jose_eggcream" width="300" height="200"/>
+        <image name="klezmer" width="341" height="193"/>
         <image name="klezmer-1" width="300" height="57"/>
         <image name="lookwholoves" width="600" height="227"/>
         <image name="los_ninios" width="299" height="88"/>
@@ -780,6 +796,7 @@
         <image name="turkey" width="600" height="400"/>
         <image name="victor_eggcream" width="300" height="450"/>
         <image name="village_voice" width="300" height="245"/>
+        <image name="vimeo" width="339" height="191"/>
         <image name="waitress" width="600" height="631"/>
     </resources>
     <inferredMetricsTieBreakers>
